@@ -31,6 +31,15 @@
   - [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line)
 
 ## Task assignment
-| Task | Assigned |
-| --- | --- |
-|  | |
+| Task | Assigned | Done |
+| --- | --- | --- |
+| Write INSTALL.md | | |
+| Write README.md | | |
+| Install script | | |
+| User add script | | |
+| Install radio script | | |
+| Configure network script | | |
+| Radio interface script | | |
+| Volume adjustment script | | |
+| Radio TUI | | |
+| Radio GUI (?) | | |
