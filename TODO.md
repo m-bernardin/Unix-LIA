@@ -1,5 +1,4 @@
-# TODO 
-
+# Project Plan 
 ## Major Components/Parts
 - INSTALL file
   - startup
@@ -26,20 +25,38 @@
   - links -> installed radio stations should kept in one central place, away from users, soft links to user directories
   - search -> when installing a new radio first checks if it exists yet
 
-- links that are nice
-  - we could use vlc for managing playback
-  - [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line)
-
+> [!IMPORTANT] Links
+> superuser thread  on vlc commands for playback 
+> [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line)
+## File structure (prelimenaray)
+| /
+|-root/
+| |- radios/
+| | |- <radioName\>.m3u
+| |- scripts/
+| | |- <span style="color:green">install</span>
+| | |- <span style="color:green">addradio</span>
+| | |- <span style="color:green">newuser</span>
+| | |- <span style="color:green">radio</span>
+| | |- <span style="color:green">setvolume</span>
+| | |- <span style="color:green">wificonfig</span>
+|- home/
+| |- [users]/
+| | |- radios/
+| | | |- <span style="color:green"><radioName\></span>
+| | |- .config/
+| | | |- radio.toml
+# TODO
 ## Task assignment
 | Task | Assigned | Done |
 | --- | --- | --- |
-| Write INSTALL.md | | |
-| Write README.md | | |
-| Install script | | |
-| User add script | | |
-| Install radio script | | |
-| Configure network script | | |
-| Radio interface script | | |
-| Volume adjustment script | | |
-| Radio TUI | | |
-| Radio GUI (?) | | |
+| Write INSTALL.md | | o |
+| Write README.md | | o |
+| Install script | | o |
+| User add script | | o |
+| Install radio script | | o |
+| Configure network script | | o |
+| Radio interface script | | o |
+| Volume adjustment script | | o |
+| Radio TUI | | o |
+| Radio GUI (?) | | o |
