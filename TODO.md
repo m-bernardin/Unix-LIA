@@ -34,6 +34,15 @@
   - another tutorial, looks more stripped down i think: https://www.raspberrypi.com/news/build-an-internet-radio/
 
 ## Task assignment
-| Task | Assigned |
-| --- | --- |
-|  | |
+| Task | Assigned | Done |
+| --- | --- | --- |
+| Write INSTALL.md | | |
+| Write README.md | | |
+| Install script | | |
+| User add script | | |
+| Install radio script | | |
+| Configure network script | | |
+| Radio interface script | | |
+| Volume adjustment script | | |
+| Radio TUI | | |
+| Radio GUI (?) | | |
