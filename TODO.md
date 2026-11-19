@@ -28,6 +28,9 @@
 > [!IMPORTANT] Links
 > superuser thread  on vlc commands for playback 
 > [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line)
+> radio tutorial: https://www.instructables.com/Raspberry-Pi-Internet-Radio/
+> code for that tutorial: https://github.com/oschettler/radio
+> another tutorial, looks more stripped down i think: https://www.raspberrypi.com/news/build-an-internet-radio/
 ## File structure (prelimenaray)
 | /
 |-root/
@@ -47,6 +50,13 @@
 | | |- .config/
 | | | |- radio.toml
 # TODO
+- links that are nice
+  - we could use vlc for managing playback
+  - [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line)
+  - radio tutorial: https://www.instructables.com/Raspberry-Pi-Internet-Radio/
+  - code for that tutorial: https://github.com/oschettler/radio
+  - another tutorial, looks more stripped down i think: https://www.raspberrypi.com/news/build-an-internet-radio/
+
 ## Task assignment
 | Task | Assigned | Done |
 | --- | --- | --- |
