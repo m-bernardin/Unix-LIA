@@ -32,23 +32,23 @@
 > code for that tutorial: https://github.com/oschettler/radio
 > another tutorial, looks more stripped down i think: https://www.raspberrypi.com/news/build-an-internet-radio/
 ## File structure (prelimenaray)
-| /
-|-root/
-| |- radios/
-| | |- <radioName\>.m3u
-| |- scripts/
-| | |- <span style="color:green">install</span>
-| | |- <span style="color:green">addradio</span>
-| | |- <span style="color:green">newuser</span>
-| | |- <span style="color:green">radio</span>
-| | |- <span style="color:green">setvolume</span>
-| | |- <span style="color:green">wificonfig</span>
-|- home/
-| |- [users]/
-| | |- radios/
-| | | |- <span style="color:green"><radioName\></span>
-| | |- .config/
-| | | |- radio.toml
+| / <br/>
+|-root/ <br/>
+| |- radios/ <br/>
+| | |- <radioName\>.m3u <br/>
+| |- scripts/ <br/>
+| | |- <span style="color:green">install</span> <br/>
+| | |- <span style="color:green">addradio</span> <br/>
+| | |- <span style="color:green">newuser</span> <br/>
+| | |- <span style="color:green">radio</span> <br/>
+| | |- <span style="color:green">setvolume</span> <br/>
+| | |- <span style="color:green">wificonfig</span> <br/>
+|- home/ <br/>
+| |- [users]/ <br/>
+| | |- radios/ <br/>
+| | | |- <span style="color:green"><radioName\></span> <br/>
+| | |- .config/ <br/>
+| | | |- radio.toml <br/>
 # TODO
 - links that are nice
   - we could use vlc for managing playback
