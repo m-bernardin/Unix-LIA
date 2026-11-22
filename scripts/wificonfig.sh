@@ -15,5 +15,10 @@ case $COMMAND in
     echo Getting status...
   ;;
   *)
-    echo HELLLLLP
+    echo ==== wificonfig HELP page ====
+    echo connect -\> Connect to a WiFi network.
+    echo add -\> Add new WiFi connection.
+    echo delete -\> Delete a WiFi connection.
+    echo status -\> Gets current WiFi connection status.
+    echo 
 esac
