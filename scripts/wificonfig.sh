@@ -40,7 +40,16 @@ case $COMMAND in
     fi
   ;;
   "status")
-    echo Getting status...
+    GENERAL_STATUS=$(nmcli g s | grep -E '[a-z]')
+    STATUS_STATE=$(awk '{print $1}' <<< $GENERAL_STATUS)
+    STATUS_CONNECTIVITY=$(awk '{print $2}' <<< $GENERAL_STATUS)
+    STATUS_WIFIHW=$(awk '{print $3}' <<< $GENERAL_STATUS)
+    STATUS_WIFI=$(awk '{print $4}' <<< $GENERAL_STATUS)
+    echo ==== Connection Status ====
+    echo State: $STATUS_STATE
+    echo Connectivity: $STATUS_CONNECTIVITY
+    echo WiFi Enabled: $STATUS_WIFI
+    echo WiFi Hardware Enabled: $STATUS_WIFIHW
   ;;
   *)
     echo ==== wificonfig HELP page ====
