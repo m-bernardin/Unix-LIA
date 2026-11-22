@@ -25,7 +25,7 @@
   - links -> installed radio stations should kept in one central place, away from users, soft links to user directories
   - search -> when installing a new radio first checks if it exists yet
 
-> [!IMPORTANT] Links
+> [!IMPORTANT] Links <br/>
 > superuser thread  on vlc commands for playback <br/>
 > [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line) <br/>
 > radio tutorial: https://www.instructables.com/Raspberry-Pi-Internet-Radio/ <br/>
