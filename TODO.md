@@ -26,11 +26,11 @@
   - search -> when installing a new radio first checks if it exists yet
 
 > [!IMPORTANT] Links
-> superuser thread  on vlc commands for playback 
-> [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line)
-> radio tutorial: https://www.instructables.com/Raspberry-Pi-Internet-Radio/
-> code for that tutorial: https://github.com/oschettler/radio
-> another tutorial, looks more stripped down i think: https://www.raspberrypi.com/news/build-an-internet-radio/
+> superuser thread  on vlc commands for playback <br/>
+> [https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line](https://superuser.com/questions/204161/is-it-possible-to-play-a-song-in-vlc-player-out-of-the-command-line) <br/>
+> radio tutorial: https://www.instructables.com/Raspberry-Pi-Internet-Radio/ <br/>
+> code for that tutorial: https://github.com/oschettler/radio <br/>
+> another tutorial, looks more stripped down i think: https://www.raspberrypi.com/news/build-an-internet-radio/ <br/>
 ## File structure (prelimenaray)
 | / <br/>
 |-root/ <br/>
