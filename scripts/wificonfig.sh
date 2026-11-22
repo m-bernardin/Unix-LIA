@@ -9,10 +9,19 @@ case $COMMAND in
     echo Enter a connection name to connect to.
     read CONNECTION_TARGET
     CONNECTION_STATUS=$(nmcli c u $CONNECTION_TARGET)
-    if [[ $CONNECTION_STATUS == "*activated*" ]]; then
+    if [[ $CONNECTION_STATUS == *"activated"* ]]; then
       echo Successfully connected!
     else
       echo Error connecting... Did you enter the name correctly?
+    fi
+  ;;
+  "disconnect")
+    ACTIVE_CONNECTION_UUID=$(nmcli c s | grep -vE '\-\-|lo' | awk '{print $2}' | grep -v 'UUID')
+    DISCONNECT_STATUS=$(nmcli c down uuid $ACTIVE_CONNECTION_UUID)
+    if [[ $DISCONNECT_STATUS == *"deactivated"* ]]; then 
+      echo Successfully disconnected!
+    else
+      echo Error disconnecting... Are you connected to a network?
     fi
   ;;
   "add")
@@ -29,7 +38,6 @@ case $COMMAND in
     else 
       echo Connection successfully deleted!
     fi
-    echo 
   ;;
   "status")
     echo Getting status...
@@ -37,8 +45,9 @@ case $COMMAND in
   *)
     echo ==== wificonfig HELP page ====
     echo connect -\> Connect to a WiFi network.
+    echo disconnect -\> Disconnect from WiFi.
     echo add -\> Add new WiFi connection.
     echo delete -\> Delete a WiFi connection.
     echo status -\> Gets current WiFi connection status.
-    echo 
 esac
+echo 
