@@ -1,16 +1,15 @@
 #!/bin/bash
-CONNECTIONS=nmcli c s | awk '{print $1}' | grep -vE 'NAME|lo'
+CONNECTIONS="Connections\n"nmcli c s | awk '{print $1}' | grep -vE 'NAME|lo'
 echo What do you want to do?
 read COMMAND
 case $COMMAND in 
   "connect")
-    echo Connecting...
+
   ;;
   "add")
     echo Adding...
   ;;
   "delete")
-    echo Connections
     echo $CONNECTIONS
     echo Enter connection name to delete
     read DELETION_TARGET 
@@ -20,6 +19,7 @@ case $COMMAND in
     else 
       echo Connection successfully deleted.
     fi
+      echo 
   ;;
   "status")
     echo Getting status...
