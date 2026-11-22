@@ -1,25 +1,35 @@
 #!/bin/bash
-CONNECTIONS="Connections\n"nmcli c s | awk '{print $1}' | grep -vE 'NAME|lo'
+CONNECTIONS=$(nmcli c s | awk '{print $1}' | grep -vE 'NAME|lo')
 echo What do you want to do?
 read COMMAND
 case $COMMAND in 
   "connect")
-
+    echo Connections
+    echo $CONNECTIONS
+    echo Enter a connection name to connect to.
+    read CONNECTION_TARGET
+    CONNECTION_STATUS=$(nmcli c u $CONNECTION_TARGET)
+    if [[ $CONNECTION_STATUS == "*activated*" ]]; then
+      echo Successfully connected!
+    else
+      echo Error connecting... Did you enter the name correctly?
+    fi
   ;;
   "add")
     echo Adding...
   ;;
   "delete")
+    echo Connections
     echo $CONNECTIONS
     echo Enter connection name to delete
     read DELETION_TARGET 
     DELETE_STATUS=nmcli c del $DELETION_TARGET
-    if [ -z "$DELETE_STATUS" ]
+    if [ -z "$DELETE_STATUS" ]; then
       echo Error deleting the connection... Did you enter the name correctly?
     else 
-      echo Connection successfully deleted.
+      echo Connection successfully deleted!
     fi
-      echo 
+    echo 
   ;;
   "status")
     echo Getting status...
