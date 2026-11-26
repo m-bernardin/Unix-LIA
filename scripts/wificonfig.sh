@@ -25,7 +25,11 @@ case $COMMAND in
     fi
   ;;
   "add")
-    echo Adding...
+    echo ==== Available connections ====
+    nmcli d w l | grep -v "$CONNECTIONS" | grep -vE "\-\-|BSSID" | awk '{print $2,$8}'
+    echo Enter a connection name to connect to.
+    read CONNECTION_TARGET
+    nmcli d w c $CONNECTION_TARGET --ask
   ;;
   "delete")
     echo Connections
